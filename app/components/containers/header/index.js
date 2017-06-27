@@ -3,7 +3,7 @@ import { Header as HeaderContainer, HeaderElement } from './styles';
 
 const Header = () =>
   <HeaderContainer>
-    <HeaderElement> image logo </HeaderElement>
+    <HeaderElement> Header elements </HeaderElement>
   </HeaderContainer>;
 
 export { Header }

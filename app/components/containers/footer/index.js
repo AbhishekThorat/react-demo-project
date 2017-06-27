@@ -3,7 +3,7 @@ import { Footer as FooterContainer } from './styles';
 
 const Footer = () =>
   <FooterContainer>
-    Footer
+    Footer elements
   </FooterContainer>;
 
 export { Footer }
