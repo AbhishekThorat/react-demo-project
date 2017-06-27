@@ -1,10 +1,11 @@
 import React from 'react';
+import { HeaderPanel, HeaderElement } from './styles';
 
 const Header = () =>
-  <div className="header">
-    <div className="header--element">image logo</div>
-    <div className="header--element">Search box</div>
-    <div className="header--element">Header tabs</div>
-  </div>
+  <HeaderPanel>
+    <HeaderElement> image logo </HeaderElement>
+    <HeaderElement> Search box </HeaderElement>
+    <HeaderElement> Header tabs </HeaderElement>
+  </HeaderPanel>
 
 export { Header }

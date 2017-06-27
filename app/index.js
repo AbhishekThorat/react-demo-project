@@ -6,8 +6,6 @@ import store from './redux/store';
 
 import { NotFound, Dashboard } from './components';
 
-import './styles/index.scss';
-
 ReactDOM.render(
   <Provider store={store}>
     <Router>
