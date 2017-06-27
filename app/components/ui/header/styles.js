@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const HeaderPanel = styled.div`
+const Header = styled.div`
   width: 100%;
   height: 70px;
   background: aquamarine;
@@ -11,4 +11,4 @@ const HeaderElement = styled.div `
   float: left;
 `;
 
-export { HeaderPanel, HeaderElement }
+export { Header, HeaderElement }

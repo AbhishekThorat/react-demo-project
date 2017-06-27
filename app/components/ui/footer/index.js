@@ -1,9 +1,9 @@
 import React from 'react';
-import { FooterPanel } from './styles';
+import { Footer as FooterContainer } from './styles';
 
 const Footer = () =>
-  <FooterPanel>
+  <FooterContainer>
     Footer
-  </FooterPanel>
+  </FooterContainer>;
 
 export { Footer }

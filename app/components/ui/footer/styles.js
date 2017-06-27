@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const FooterPanel = styled.div`
+const Footer = styled.div`
   width: 100%;
   height: 70px;
   background: red;
@@ -8,4 +8,4 @@ const FooterPanel = styled.div`
   position: fixed;
 `;
 
-export { FooterPanel }
+export { Footer }
