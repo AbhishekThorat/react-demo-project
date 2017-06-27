@@ -1,9 +1,9 @@
 import React from 'react';
-import { MainContainer } from '../../container';
+import { MainLayout } from '../../layouts';
 
 const Dashboard = () =>
-  <MainContainer>
+  <MainLayout>
     <h3>Dashboard called</h3>
-  </MainContainer>
+  </MainLayout>
 
 export { Dashboard }
