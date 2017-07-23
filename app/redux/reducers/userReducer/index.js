@@ -1,5 +1,3 @@
-import { STRING_CONSTANTS } from '../../../utils/constant/';
-
 const initialState = {
   user: {
     id: null,
