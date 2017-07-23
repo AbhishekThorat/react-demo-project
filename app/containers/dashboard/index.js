@@ -1,12 +1,11 @@
 import React from 'react';
-import { ParentLayout } from '../../layouts';
-import { Form, Input } from '../../UI';
+import { Layout, Form, Input } from '../../components';
 
 const Dashboard = () =>
-  <ParentLayout>
+  <Layout>
     <Form>
       <Input type="file" name="pic" accept="image/*" />
     </Form>
-  </ParentLayout>
+  </Layout>;
 
 export { Dashboard }

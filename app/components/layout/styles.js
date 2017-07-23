@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const ParentLayout = styled.div`
+const Layout = styled.div`
   background: blue;
 `;
 
-export { ParentLayout }
+export { Layout }
