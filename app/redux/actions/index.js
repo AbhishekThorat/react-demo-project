@@ -1,1 +1,1 @@
-export { register } from "./userActions";
+export { register, getCurrentUser } from "./userActions";

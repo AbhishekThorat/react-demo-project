@@ -7,4 +7,15 @@ function register(data) {
   };
 }
 
-export { register };
+const userData = {
+  name: 'abhishek'
+};
+
+const getCurrentUser = () => (dispatch) => {
+  dispatch({
+    type: 'GET_CURRENT_USER',
+    currentUser: userData,
+  });
+};
+
+export { register, getCurrentUser };

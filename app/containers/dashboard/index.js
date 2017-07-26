@@ -1,11 +1,34 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
+import { connect } from 'react-redux';
+import { getCurrentUser } from '../../redux/actions';
 import { Layout, Form, Input } from '../../components';
 
-const Dashboard = () =>
-  <Layout>
-    <Form>
-      <Input type="file" name="pic" accept="image/*" />
-    </Form>
-  </Layout>;
+class Dashboard extends PureComponent {
+  
+  componentDidMount() {
+    const { getCurrentUser } = this.props;
+    getCurrentUser();
+  }
+  
+  render() {
+    return (
+      <Layout>
+        <Form>
+          <Input type="file" name="pic" accept="image/*" />
+        </Form>
+      </Layout>
+    )
+  }
+}
 
-export { Dashboard }
+const mapStateToProps = state => ({
+  currentUser: state.user.currentUser,
+});
+
+const actions = {
+  getCurrentUser
+};
+
+const enhancedComponent = connect(mapStateToProps, actions)(Dashboard);
+
+export { enhancedComponent as Dashboard }

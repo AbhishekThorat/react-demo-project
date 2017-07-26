@@ -13,8 +13,10 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case 'FETCH_USER': {
-      console.log("our reducer called", action);
       return { ...state, fetching: true };
+    }
+    case 'GET_CURRENT_USER': {
+      return { ...state, currentUser: action.currentUser };
     }
     default: break;
   }
